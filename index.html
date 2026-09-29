@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>璀璨银河下的尘埃</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.webmanifest">
+</head>
+<body>
+    <!-- 星空背景画布 -->
+    <canvas id="starCanvas"></canvas>
+
+    <!-- 密码页 -->
+    <div id="passwordPage" class="page">
+        <div class="center-box">
+            <h2>浩瀚星河无垠，唯有持密钥者，方能窥见这粒尘埃的故事</h2>
+            <input type="password" id="pwdInput" placeholder="请输入访问密钥">
+            <button id="pwdBtn">进入星河</button>
+            <p id="tipText"></p>
+        </div>
+    </div>
+
+    <!-- 主页 -->
+    <div id="homePage" class="page hidden">
+        <div class="center-box">
+            <h1>璀璨银河下的尘埃</h1>
+            <p class="subtitle">人海一粒尘，亦有属于自己的光</p>
+            <div class="nav-group">
+                <button class="nav-btn" data-target="about">✨ 关于我</button>
+                <button class="nav-btn" data-target="career">💼 职业履历</button>
+                <button class="nav-btn" data-target="works">🖼️ 作品相册</button>
+                <button class="nav-btn" data-target="life">🌌 生活影像</button>
+                <button class="nav-btn" data-target="video">🎬 影音片段</button>
+                <button class="nav-btn" data-target="pdf">📄 档案PDF下载</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 关于我 -->
+    <div id="about" class="subpage hidden">
+        <div class="content-wrap">
+            <h2>✨ 关于我</h2>
+            <p>这里填写你的自我介绍、城市、爱好、个人价值观。后续你可以直接修改这段文字。</p>
+            <button class="back-btn">返回</button>
+        </div>
+    </div>
+
+    <!-- 职业履历 -->
+    <div id="career" class="subpage hidden">
+        <div class="content-wrap">
+            <h2>💼 职业履历</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>20XX - 至今｜岗位名称</h3>
+                    <p>项目、工作描述，可增加多条经历。</p>
+                </div>
+            </div>
+            <button class="back-btn">返回</button>
+        </div>
+    </div>
+
+    <!-- 作品相册 -->
+    <div id="works" class="subpage hidden">
+        <div class="content-wrap">
+            <h2>🖼️ 作品相册</h2>
+            <div class="gallery">
+                <!-- 示例图片，后续替换成你的图片外链 -->
+                <div class="gallery-item"><img src="https://picsum.photos/id/1002/600/400" alt="作品" class="gallery-img"></div>
+                <div class="gallery-item"><img src="https://picsum.photos/id/1004/600/400" alt="作品" class="gallery-img"></div>
+            </div>
+            <button class="back-btn">返回</button>
+        </div>
+    </div>
+
+    <!-- 生活影像 -->
+    <div id="life" class="subpage hidden">
+        <div class="content-wrap">
+            <h2>🌌 生活影像</h2>
+            <div class="gallery">
+                <div class="gallery-item"><img src="https://picsum.photos/id/1015/600/400" alt="生活照" class="gallery-img"></div>
+            </div>
+            <button class="back-btn">返回</button>
+        </div>
+    </div>
+
+    <!-- 影音片段 -->
+    <div id="video" class="subpage hidden">
+        <div class="content-wrap">
+            <h2>🎬 影音片段</h2>
+            <div class="video-box">
+                <!-- 替换为你的B站嵌入iframe -->
+                <iframe width="100%" height="315" src="https://player.bilibili.com/player.html?aid=672455537" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <button class="back-btn">返回</button>
+        </div>
+    </div>
+
+    <!-- PDF下载页 -->
+    <div id="pdf" class="subpage hidden">
+        <div class="content-wrap">
+            <h2>📄 档案PDF下载</h2>
+            <p>完整离线档案，可保存到本地。</p>
+            <a href="这里替换成你的PDF外链地址" class="download-btn">下载PDF档案</a>
+            <button class="back-btn">返回</button>
+        </div>
+    </div>
+
+    <!-- 图片大图预览弹窗 -->
+    <div id="imgModal" class="modal">
+        <span class="close-modal">&times;</span>
+        <img id="modalImg">
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>

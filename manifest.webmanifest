@@ -1,0 +1,15 @@
+{
+  "name": "璀璨银河下的尘埃",
+  "short_name": "银河尘埃",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#040614",
+  "theme_color": "#4338ca",
+  "icons": [
+    {
+      "src": "https://picsum.photos/id/1003/512/512",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
